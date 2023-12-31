@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h1 class="header_text">Yeeyy ! Finally</h1>
+      </div>
+      <div class="gif_container">
+        <img
+          src="https://i.postimg.cc/wTDG30TB/yes.gif"
+          alt="Cute animated illustration"
+        />
+      </div>
+
+            <!-- Popup container -->
+      <div id="popupContainer" class="popup">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <h2>Call Me</h2>
+      </div>
+      <button class="btn" id="yesButton" onclick="nextPage()">
+        Let's Fix a Date
+      </button>
+    </div>
+
+    <script>
+      document.getElementById('yesButton').addEventListener('click', function() {
+  document.getElementById('popupContainer').style.display = 'block';
+});
+
+// Function to close the popup
+function closePopup() {
+  document.getElementById('popupContainer').style.display = 'none';
+}
+    </script>
+  </body>
+</html>
